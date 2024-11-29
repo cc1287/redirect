@@ -1,6 +1,6 @@
 {
     "version": 2,
     "routes": [
-      {"src": "/bilibili/(.*)","dest": "https://api.bilibili.com/"}
+      {"src": "/bilibili/(.*)","dest": "https://api.bilibili.com/$1"}
     ]
 }
