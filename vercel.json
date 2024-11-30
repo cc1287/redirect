@@ -4,6 +4,10 @@
         {
             "source": "/",
             "destination": "/api/HelloWorld"
+        },
+        {
+            "source": "/bilibili/(.*)",
+            "destination": "/api/bilibili/$1"
         }
     ]
 }
