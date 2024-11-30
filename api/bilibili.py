@@ -2,11 +2,11 @@ from flask import *
 import requests
 
 # noinspection SpellCheckingInspection
-cookie = "buvid4=C9BFC9E2-E7E5-091A-22C9-409B4F48107E40794-022020811-Pk1O31qDhl6Jj4V431PIhjyISUxRfkXz7w3Qh7RdhDt15UIdb1Simw%3D%3D; buvid_fp_plain=undefined; header_theme_version=CLOSE; FEED_LIVE_VERSION=V8; enable_web_push=DISABLE; CURRENT_BLACKGAP=0; LIVE_BUVID=AUTO9017015168446128; hit-dyn-v2=1; CURRENT_FNVAL=4048; rpdid=|(J~lRJ|lm|J0J'u~|l)J~l)Y; buvid3=469C1854-27B5-431D-991F-EE7C964542DC27591infoc; DedeUserID=3461572043212849; DedeUserID__ckMd5=9c859e98e1b4ab2c; CURRENT_QUALITY=32; b_nut=100; home_feed_column=4; fingerprint=2806405a2d4d995fc4087c7da401395c; buvid_fp=f01f9fe6915db32363e25dc5bc08d1ef; bp_t_offset_3461572043212849=997411948683329536; PVID=4; _uuid=A1BD10486-4109F-4771-10167-53B10EDA5EE3217697infoc; bili_ticket=eyJhbGciOiJIUzI1NiIsImtpZCI6InMwMyIsInR5cCI6IkpXVCJ9.eyJleHAiOjE3MzI0NTcyNjgsImlhdCI6MTczMjE5ODAwOCwicGx0IjotMX0.1qJ94AqULdH75Ozcdku2bzsAeLlSZ2oR4upuu_DabC0; bili_ticket_expires=1732457208; SESSDATA=acd7784b%2C1747750076%2Cd9a5e%2Ab1CjATrntTcQqWYEG0rXU2FImzTRFX0BOeSxMBwfImutyTxs1OHUUIJdNDgKPYZB95BEMSVnEtR3N2RHoyRzRGeTlGeE1jdnJ3WHFEaXhQUVI0S0FqWThibDEwQTB5RGVBeC1lMS1EY1pBckRnS3U2M2hFZlg5UkFWLWFVa21XeG5CczdQZzZfQk5nIIEC; bili_jct=a4d28dbbb5c2253ffcdb5cffe8a4d915; sid=4yl2wvlx; match_float_version=ENABLE; browser_resolution=1231-706; b_lsid=10E5B3411_1935C926704"
+cookie = "buvid3=109277F6-9E1D-2BE6-659C-9357A01175B136828infoc; b_nut=1732445936; _uuid=5C84E4C4-BF7E-7F47-7791-13CCE108DDA3836304infoc; buvid_fp=b50ec886c196c981acefb185ab0928ca; enable_web_push=DISABLE; buvid4=9B7F743C-DE64-F748-DB64-9841D473CA5137556-024112410-AZ5watrOjBO%2F3kusUssSCQ%3D%3D; DedeUserID=3461572043212849; DedeUserID__ckMd5=9c859e98e1b4ab2c; bp_t_offset_3461572043212849=1003336830298357760; b_lsid=F4610D56D_1937BF55BD4; bmg_af_switch=1; bmg_src_def_domain=i0.hdslb.com; header_theme_version=CLOSE; bili_ticket=eyJhbGciOiJIUzI1NiIsImtpZCI6InMwMyIsInR5cCI6IkpXVCJ9.eyJleHAiOjE3MzMyMTA2ODksImlhdCI6MTczMjk1MTQyOSwicGx0IjotMX0._7YESb_KeYbXedX9CpZc7FaLlxqqHdTJEzJ8CPRsrd0; bili_ticket_expires=1733210629; SESSDATA=202a954d%2C1748503489%2Ccd936%2Ab1CjDW69SwyzNL1DniJkUVgrfJTJf4jU3YyN8HlkbCm8tK1gn3gkmza-gQAmayq7m9nMESVk1YMmhsNWI1ejRmVkZLeXdLb1daYTBaVi1ZcTRYM2ROUVhXWUNPUVlSRk1mT1J0d0pJZEU5MzJ6Y0p1M2R2M1Z2cGxvTDhfa05BN0tzQjI3Rmp5cDNnIIEC; bili_jct=e2df52cc194c68dd66e9c11105b4f14b; home_feed_column=4; browser_resolution=853-700; CURRENT_FNVAL=4048; sid=g3u0lg57"
 header = {
     'Cookie': cookie,
-    'User-Agent': "User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/131.0.0.0 Safari/537.36 Edg/131.0.0.0",
-    'Referer': "Referer: https://www.bilibili.com/",
+    'User-Agent': "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/131.0.0.0 Safari/537.36",
+    'Referer': "https://www.bilibili.com/",
 }
 app = Flask(__name__)
 
