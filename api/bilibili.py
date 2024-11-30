@@ -20,4 +20,4 @@ def bilibili_search():
         return jsonify(res)
     except Exception as e:
         print(e)
-        return res
+        return res.content
