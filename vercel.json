@@ -7,7 +7,7 @@
         },
         {
             "source": "/bilibili/(.*)",
-            "destination": "/api/bilibili/$1"
+            "destination": "/api/bilibili"
         }
     ]
 }
