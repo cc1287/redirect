@@ -15,6 +15,7 @@ app = Flask(__name__)
 def bilibili_search():
     page = request.args.get('page')
     keyword = request.args.get('keyword')
+    print("https://api.bilibili.com/x/web-interface/search/all/v2?page={}&keyword={}".format(page, keyword))
     res = requests.get("https://api.bilibili.com/x/web-interface/search/all/v2?page={}&keyword={}"
                        .format(page, keyword), headers=header)
     try:
