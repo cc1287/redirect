@@ -19,7 +19,7 @@ def bilibili_search():
     res = requests.get("https://api.bilibili.com/x/web-interface/search/all/v2?page={}&keyword={}"
                        .format(page, keyword), headers=header)
     try:
-        return jsonify(res)
+        return res.json()
     except Exception as e:
         print(e)
         return res.content
@@ -31,7 +31,7 @@ def bilibili_view():
     res = requests.get("https://api.bilibili.com/x/web-interface/view?bvid={}"
                        .format(bvid), headers=header)
     try:
-        return jsonify(res)
+        return res.json()
     except Exception as e:
         print(e)
         return res.content
@@ -44,7 +44,7 @@ def bilibili_playurl():
     res = requests.get("https://cc1287-redirect.vercel.app/bilibili/x/player/playurl?fnval=80&cid={}&avid={}"
                        .format(cid, avid), headers=header)
     try:
-        return jsonify(res)
+        return res.json()
     except Exception as e:
         print(e)
         return res.content
